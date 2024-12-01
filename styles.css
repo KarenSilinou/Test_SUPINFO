@@ -1,0 +1,149 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 600px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.upload-section {
+    margin: 10px 0;
+}
+
+#fileLabel {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+#fileLabel:hover {
+    background-color: #0056b3;
+}
+
+#imageInput {
+    display: none;
+}
+
+.canvas-container {
+    position: relative;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+canvas {
+    width: 250px;
+    height: 360px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    background: #e9ecef;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.gallery {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.gallery #galleryContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery .meme-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery .meme-container img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.gallery .meme-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 5px;
+}
+
+.gallery .meme-container:hover .overlay {
+    opacity: 1;
+}
+
+.gallery .overlay button {
+    margin: 5px 0;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 80%;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.gallery .overlay button:hover {
+    background-color: #0056b3;
+}
